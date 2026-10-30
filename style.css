@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #f1f5f9;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 6px;
+}
+
+.info-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.input-group input {
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #38bdf8;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0369a1;
+}
+
+.result {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    background-color: #0f172a;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #38bdf8;
+}
+
+.result span {
+    font-family: monospace;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* Cores dinâmicas de status */
+.sucesso {
+    border-left-color: #22c55e !important;
+}
+.sucesso span {
+    color: #22c55e !important;
+}
+
+.erro {
+    border-left-color: #ef4444 !important;
+}
+.erro span {
+    color: #ef4444 !important;
+}
