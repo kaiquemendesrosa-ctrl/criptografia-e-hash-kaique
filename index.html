@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Criptografia, Hash e Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 Simulador de Segurança Digital</h1>
+            <p>Testes interativos de criptografia por dicionário, geração de Hash ASCII e autenticação segura.</p>
+        </header>
+
+        <!-- Seção 1: Criptografia por Dicionário -->
+        <section class="card">
+            <h2>1. Criptografia por Dicionário</h2>
+            <div class="input-group">
+                <label for="senhaCifrar">Texto/Senha:</label>
+                <input type="text" id="senhaCifrar" placeholder="Ex: marcelo123" value="marcelo123">
+            </div>
+            <button onclick="executarCriptografia()">Criptografar</button>
+            <div class="result" id="resultadoCripto">Resultado: <span>-</span></div>
+        </section>
+
+        <!-- Seção 2: Cálculo de Hash -->
+        <section class="card">
+            <h2>2. Cálculo de Hash (Soma ASCII)</h2>
+            <div class="input-group">
+                <label for="senhaHash">Texto/Senha:</label>
+                <input type="text" id="senhaHash" placeholder="Ex: marcelo123" value="marcelo123">
+            </div>
+            <button onclick="executarHash()">Gerar Hash</button>
+            <div class="result" id="resultadoHash">Hash gerado: <span>-</span></div>
+        </section>
+
+        <!-- Seção 3: Simulação de Sistema de Login -->
+        <section class="card">
+            <h2>3. Simulação de Login Seguro</h2>
+            <p class="info-text">O sistema cadastrou <strong>"marcelo123"</strong> e armazenou apenas seu Hash. Digite a senha para testar:</p>
+            <div class="input-group">
+                <label for="senhaLogin">Senha de Acesso:</label>
+                <input type="password" id="senhaLogin" placeholder="Digite sua senha...">
+            </div>
+            <button onclick="executarLogin()">Entrar</button>
+            <div class="result" id="resultadoLogin">Status: <span>Aguardando tentativa...</span></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
